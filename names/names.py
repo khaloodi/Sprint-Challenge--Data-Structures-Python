@@ -17,12 +17,13 @@ for name_1 in names_1:
         if name_1 == name_2:
             duplicates.append(name_1)
 
-names = BinarySearchTree(names_1[0])
-for i in names_1:
-    names.insert(i)
-for index in range(len(names_2)):
-    if names.contains(names_2[index]):
-        duplicates.append(names_2[index])
+# me trying to implement a binary search tree below but didn't use it, run time currently 8 seconds
+# names = BinarySearchTree(names_1[0])
+# for i in names_1:
+#     names.insert(i)
+# for index in range(len(names_2)):
+#     if names.contains(names_2[index]):
+#         duplicates.append(names_2[index])
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
